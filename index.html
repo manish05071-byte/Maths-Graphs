@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Graph Plotter</title>
+  <link rel="" href="style.css">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>Interactive Math Graph Plotter</h1>
+
+  <label for="graphType">Choose Graph Type:</label>
+  <select id="graphType">
+    <option value="line">Line</option>
+    <option value="parabola">Parabola</option>
+    <option value="trig">Trigonometric</option>
+    <option value="custom">Custom</option>
+  </select>
+
+  <div id="inputArea">
+    <label for="functionInput">Graph 1 (y = ...):</label>
+    <input type="text" id="functionInput" placeholder="x^2 - 4x + 3">
+
+    <label for="functionInput2">Graph 2 (optional):</label>
+    <input type="text" id="functionInput2" placeholder="sin(x)">
+
+    <button id="plotBtn">Plot Graph(s)</button>
+  </div>
+
+  <div id="graph"></div>
+  <div id="mcqDiv"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
